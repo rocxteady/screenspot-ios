@@ -1,0 +1,18 @@
+# Xcode
+.DS_Store
+xcuserdata/
+xcworkspace/
+xcuserstate/
+DerivedData
+build/
+*.ipa
+*.xcarchive
+*.p12
+*.mobileprovision
+
+# Swift
+*.swiftpm
+Package.resolved
+
+# General
+*.log
