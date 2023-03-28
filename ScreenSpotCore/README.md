@@ -1,3 +1,3 @@
-# AppCore
+# ScreenSpotCore
 
 A description of this package.

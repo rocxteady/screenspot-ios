@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ScreenSpotCore
 
 struct OnboardingView: View {
     var body: some View {
@@ -24,7 +25,7 @@ struct OnboardingView: View {
                     .font(.headline)
                     .multilineTextAlignment(.center)
                     .padding(.bottom, 40)
-                NavigationLink(destination: SignupView()) {
+                NavigationLink(destination: SignupView(store: .init(initialState: Signup.State(), reducer: Signup()))) {
                     Text("Sign Up")
                         .font(.headline)
                         .foregroundColor(.white)

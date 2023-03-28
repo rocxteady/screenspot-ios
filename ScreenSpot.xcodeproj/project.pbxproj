@@ -15,6 +15,7 @@
 		7CAF1F9B29D0AF0600F53C61 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAF1F9829D0AF0600F53C61 /* LoginView.swift */; };
 		7CAF1F9C29D0AF0600F53C61 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAF1F9929D0AF0600F53C61 /* ForgotPasswordView.swift */; };
 		7CAF1F9E29D0AF1300F53C61 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAF1F9D29D0AF1300F53C61 /* OnboardingView.swift */; };
+		7CC8F23E29D10ECC00554946 /* ScreenSpotCore in Frameworks */ = {isa = PBXBuildFile; productRef = 7CC8F23D29D10ECC00554946 /* ScreenSpotCore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,11 +25,11 @@
 		7CAF1F8B29D0AEAB00F53C61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CAF1F8D29D0AEAB00F53C61 /* ScreenSpot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScreenSpot.entitlements; sourceTree = "<group>"; };
 		7CAF1F8F29D0AEAB00F53C61 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		7CAF1F9629D0AED400F53C61 /* AppCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = AppCore; sourceTree = "<group>"; };
 		7CAF1F9729D0AF0600F53C61 /* SignupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		7CAF1F9829D0AF0600F53C61 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		7CAF1F9929D0AF0600F53C61 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		7CAF1F9D29D0AF1300F53C61 /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		7CC8F23C29D10E9200554946 /* ScreenSpotCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ScreenSpotCore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CC8F23E29D10ECC00554946 /* ScreenSpotCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,9 +47,10 @@
 		7CAF1F7B29D0AEAA00F53C61 = {
 			isa = PBXGroup;
 			children = (
-				7CAF1F9629D0AED400F53C61 /* AppCore */,
+				7CC8F23C29D10E9200554946 /* ScreenSpotCore */,
 				7CAF1F8629D0AEAA00F53C61 /* ScreenSpot */,
 				7CAF1F8529D0AEAA00F53C61 /* Products */,
+				7CC8F23929D10D7B00554946 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +86,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		7CC8F23929D10D7B00554946 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -99,6 +109,9 @@
 			dependencies = (
 			);
 			name = ScreenSpot;
+			packageProductDependencies = (
+				7CC8F23D29D10ECC00554946 /* ScreenSpotCore */,
+			);
 			productName = ScreenSpot;
 			productReference = 7CAF1F8429D0AEAA00F53C61 /* ScreenSpot.app */;
 			productType = "com.apple.product-type.application";
@@ -372,6 +385,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7CC8F23D29D10ECC00554946 /* ScreenSpotCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ScreenSpotCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7CAF1F7C29D0AEAA00F53C61 /* Project object */;
 }
